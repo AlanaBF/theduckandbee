@@ -1,7 +1,10 @@
 :root {
-  font-family: handlee;
+  font-family: 'Handlee', cursive;
   background-color: #ffe184;
   text-align: center;
-  height: 87vh;
+  --duck-egg:  #AADDE7;
+  --yellow: #FFE184;
+  --orange: orange;
+  margin: 0;
 }
 

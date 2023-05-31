@@ -1,14 +1,29 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import About from "./pages/About"
+import NotFound from "./pages/NotFound"
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 import './App.css'
-import image from './assets/images/duck and bee banner.jpg'
-function App() {
- 
 
+const App = () => {
   return (
-    <>
-    <div className="pageBackground"></div>
-    <img className="bannerImage" src={image}></img>
-    </>
-  )
-}
+    <Router>
+      <div>
+        <Header />
+      </div>
+      <div>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/About" element={<About />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </div>
+      <div>
+        <Footer />
+      </div>
+    </Router>
+  );
+};
 
-export default App
+export default App;

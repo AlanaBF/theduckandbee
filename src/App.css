@@ -1,3 +1,89 @@
+.pageBackground {
+  background-color: var(--yellow);
+  min-height: 87vh;
+}
+
+.welcomeSubtitle {
+  background-color: var(--yellow);
+  padding: 20px;
+  font-family: "Handlee", cursive;
+  font-size: 5em;
+}
+
+.welcomeText {
+  background-color: var(--duck-egg);
+  padding: 20px;
+  font-family: "Handlee", cursive;
+  font-size: 3em;
+  margin: 20px auto;
+  width: 60%;
+  border-radius: 20px;
+}
+
+/*  Footer Component */
+
+.footer {
+  width: 100%;
+  background-color: var(--duck-egg);
+  font-size: 2rem !important;
+  text-align: center;
+  padding: 10px;
+  font-family: "Handlee", cursive;
+  margin: 0;
+}
+
+/* Header Component */
+
+.navigation {
+  width: 100% !important;
+  height: 100% !important;
+  font-size: 3rem !important;
+  background-color: var(--duck-egg);
+  font-family: "Handlee", cursive;
+  justify-content: space-around !important;
+  margin: 0;
+  color: var(--yellow) !important;
+}
+
+.navIcons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-decoration: none !important;
+  color: var(--yellow);
+}
+
+.navbarIcons {
+  font-size: 2rem !important;
+  color: var(--yellow);
+  padding: 10px;
+}
+
+.navbarIcons:hover {
+  font-size: 2rem !important;
+  color: var(--orange) !important;
+  padding: 10px;
+}
+
+.navbarBrand {
+  font-size: 100%;
+  margin-left: 1%;
+}
+
+.navLink {
+  color: var(--yellow) !important;
+  font-size: 60%;
+  border-radius: 20px;
+  width: auto;
+}
+
+.navLink:hover {
+  background-color: var(--orange);
+  color: var(--duck-egg) !important;
+  border-radius: 20px;
+  width: auto;
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;
