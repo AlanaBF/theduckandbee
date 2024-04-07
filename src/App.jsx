@@ -5,19 +5,22 @@ import Cashel from "./pages/Cashel/index";
 import LarksRise from "./pages/LarksRise/index";
 import NotFound from "./pages/NotFound/index";
 import "./App.css";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Header from "./components/Header";
+import {
+  createHashRouter,
+  createRoutesFromElements,
+  RouterProvider,
+  Outlet,
+  Route,
+} from "react-router-dom";import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Posts from "./components/BlogJS/Posts";
 import Post1 from "./components/BlogJS/Post1";
 
 
 const App = () => {
-  return (
-    <Router>
-      <div>
-        <Header />
-        <Routes>
+  const router = createHashRouter(
+    createRoutesFromElements(
+      <Route path="/" element={<Root />}>
           <Route path="/" element={<Home />} />
           <Route path="/Blog" element={<Blog />} />
           <Route exact path="/" element={<Posts />} />
@@ -26,11 +29,24 @@ const App = () => {
           <Route path="/Cashel" element={<Cashel />} />
           <Route path="/LarksRise" element={<LarksRise />} />
           <Route path="*" element={<NotFound />} />
-        </Routes>
+        </Route>
+    )
+    )
+    return <RouterProvider router={router} />
+  }
+const Root = () => {
+  return (
+    <>
+      <div>
+        <Header />
+      </div>
+      <div>
+        <Outlet />
+      </div>
+      <div>
         <Footer />
       </div>
-    </Router>
+    </>
   );
 };
-
 export default App;
