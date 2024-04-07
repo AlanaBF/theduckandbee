@@ -1,5 +1,5 @@
 import TransformMe from "../../components/TransformMe";
-
+import Logo from "../../assets/logo-notext.png"
 function PathwayToWellness() {
   return (
     <div className="pageBackground">
@@ -24,6 +24,8 @@ function PathwayToWellness() {
           transparently. If you&apos;re on a similar quest, let&apos;s connect
           and support each other.
         </p>
+        <img src={Logo} style={{width:"20%", backgroundColor:"#e76f51", display:"flex",margin:"auto", borderRadius:"20px"}}></img>
+
         <h1>Fitness Goals:</h1>
         <br />
         <p>
@@ -42,13 +44,12 @@ function PathwayToWellness() {
             Investing in my long-term health is non-negotiable.
           </li>
           <li className="driving-me">
-            I want to dive back into the sports that bring me joy.
+            I want to dive back into the sports that bring me joy and learn some new ones.
           </li>
           <li className="driving-me">
             I hope to motivate others by sharing the tangible steps and progress
             in my health journey.
-          </li>
-        </ul>
+          </li> </ul>
       </div>
       <br />
       <TransformMe />

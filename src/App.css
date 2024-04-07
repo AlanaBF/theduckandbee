@@ -149,6 +149,36 @@ td li {
   font-family: "Rubik Doodle Shadow";
 }
 
+.dropdown-menu {
+  color: white;
+  font-family: "Handlee";
+}
+/* Blog Page Styles */
+
+/* .blogCard {
+  width: 30%;
+  margin: auto;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+} */
+
+.fade {
+opacity: 1;
+}
+
+.custom-modal-dialog {
+min-width:80% !important;
+
+}
+
+.modalImages {
+  width: 40%;
+  display: flex;
+  margin: auto;
+}
+
 /* Page not found */
 
 .AWOLpageBackground {

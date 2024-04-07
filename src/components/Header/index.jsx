@@ -6,7 +6,6 @@ import "../../App.css";
 import { NavDropdown } from "react-bootstrap";
 
 function Header() {
-
   return (
     <Navbar
       collapseOnSelect
@@ -19,11 +18,14 @@ function Header() {
         </Navbar.Brand>
       </LinkContainer>
 
-      <Navbar.Toggle aria-controls="responsive-navbar-nav" >
+      <Navbar.Toggle aria-controls="responsive-navbar-nav">
         <i className="fa-solid fa-bars"></i>
       </Navbar.Toggle>
 
-      <Navbar.Collapse id="responsive-navbar-nav" className="navbar-collapse collapse justify-content-between align-items-center w-100">
+      <Navbar.Collapse
+        id="responsive-navbar-nav"
+        className="navbar-collapse collapse justify-content-between align-items-center w-100"
+      >
         <Nav className="me-auto navbar-nav mx-auto text-md-center text-left">
           <LinkContainer to="/">
             <Nav.Link className="navLink">Home</Nav.Link>
@@ -31,14 +33,22 @@ function Header() {
           <LinkContainer to="/Blog">
             <Nav.Link className="navLink">Blog</Nav.Link>
           </LinkContainer>
-          <NavDropdown title="Life Chapters" id="basic-nav-dropdown" className="navDropdown">
-              <NavDropdown.Item href="/PathwayToWellness">Transform Me</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-            </NavDropdown>
 
+          <NavDropdown
+            title="Life Chapters"
+            id="basic-nav-dropdown"
+            className="navDropdown"
+          >
+            <NavDropdown.Item href="/PathwayToWellness">
+              My Transformation
+            </NavDropdown.Item>
+            <NavDropdown.Item href="/Cashel">
+              Cashel&apos;s Transformation
+            </NavDropdown.Item>
+            <NavDropdown.Item href="/LarksRise">
+              Our House Renovation
+            </NavDropdown.Item>
+          </NavDropdown>
         </Nav>
 
         <Nav className="nav navbar-nav flex-row justify-content-md-center justify-content-start flex-nowrap">

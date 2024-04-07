@@ -1,11 +1,12 @@
-import '../../App.css'
+import Posts from "../../components/BlogJS/Posts";
 
-function Blog() {
-  return (
-    <div className="pageBackground">
-    <h1>Coming Soon</h1>
-  </div>
-  )
-}
-
-export default Blog;
+ 
+const BlogPage = () => {
+    return (
+        <div className="pageBackground">
+            <Posts/>
+        </div>
+    );
+};
+ 
+export default BlogPage;

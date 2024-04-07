@@ -1,7 +1,7 @@
 function MealPlanner() {
-    return (
-        <div>
-            <h1>Meal Tracker: Weekly Menu</h1>
+  return (
+    <div>
+      <h1 style={{ fontSize: "4em" }}>Meal Tracker: Weekly Menu</h1>
       <table>
         <thead>
           <tr>
@@ -26,26 +26,35 @@ function MealPlanner() {
             </td>
           </tr>
           <tr>
-            <td>Lunch Options (rotating fillings for Jacket Potato): 1.30pm</td>
+            <td>Lunch Options: 1.30pm</td>
             <td>
               <ul>
-                <li>Tuna mayo with sweetcorn</li>
-                <li>Baked beans and grated extra mature cheddar cheese</li>
-                <li>Chilli and garlic tuna mayo and cheese triangles</li>
-                <li>Cottage cheese and chives</li>
+                <li>Tuna mayo Jacket Potato</li>
+                <li>
+                  Baked beans and grated extra mature cheddar cheese Jacket
+                  Potato
+                </li>
+                <li>
+                  Chilli and garlic tuna mayo and cheese triangles Jacket Potato
+                </li>
+                <li>Cottage cheese and chives Jacket Potato</li>
+                (Each served with a selection of pickles such as kimchi,
+                beetroot, gherkins, pickled onions, olives, and peppers in
+                brine.)
+                <li>
+                  Homemade hummus with wholemeal pitta bread, carrots, red
+                  peppers, and cherry tomatoes
+                </li>
               </ul>
-              Each served with a selection of pickles such as kimchi, beetroot,
-              gherkins, pickled onions, olives, and peppers in brine.
             </td>
           </tr>
           <tr>
             <td>Snack Options: 4pm</td>
             <td>
               <ul>
-                <li>Fresh fruits such as clementines, kiwi, and pineapple</li>
                 <li>
-                  Homemade hummus with wholemeal pitta bread, carrots, red
-                  peppers, and cherry tomatoes
+                  Fresh fruits such as clementines, kiwi, banana, berries and
+                  pineapple
                 </li>
               </ul>
             </td>
@@ -63,7 +72,7 @@ function MealPlanner() {
           </tr>
         </tbody>
       </table>
-        </div>
-    )
+    </div>
+  );
 }
-export default MealPlanner
+export default MealPlanner;
