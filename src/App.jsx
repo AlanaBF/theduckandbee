@@ -1,15 +1,16 @@
-import Home from "./pages/Home";
+import Home from "./pages/Home/index";
 import Blog from "./pages/Blog/index";
-import PathwayToWellness from "./pages/PathwayToWellness"; 
-import Cashel from "./pages/Cashel";
-import LarksRise from "./pages/LarksRise";
-import NotFound from "./pages/NotFound";
+import PathwayToWellness from "./pages/PathwayToWellness/index"; 
+import Cashel from "./pages/Cashel/index";
+import LarksRise from "./pages/LarksRise/index";
+import NotFound from "./pages/NotFound/index";
 import "./App.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Posts from "./components/BlogJS/Posts";
 import Post1 from "./components/BlogJS/Post1";
+
 
 const App = () => {
   return (
