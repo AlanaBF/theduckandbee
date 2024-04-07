@@ -39,15 +39,15 @@ function Header() {
             id="basic-nav-dropdown"
             className="navDropdown"
           >
-            <NavDropdown.Item href="/PathwayToWellness">
-              My Transformation
-            </NavDropdown.Item>
-            <NavDropdown.Item href="/Cashel">
-              Cashel&apos;s Transformation
-            </NavDropdown.Item>
-            <NavDropdown.Item href="/LarksRise">
-              Our House Renovation
-            </NavDropdown.Item>
+            <LinkContainer to="/PathwayToWellness">
+              <Nav.Link> My Transformation</Nav.Link>
+            </LinkContainer>
+            <LinkContainer to="/Cashel">
+              <Nav.Link>Cashel&apos;s Transformation</Nav.Link>
+            </LinkContainer>
+            <LinkContainer to="/LarksRise">
+              <Nav.Link>Our House Renovation</Nav.Link>
+            </LinkContainer>
           </NavDropdown>
         </Nav>
 
