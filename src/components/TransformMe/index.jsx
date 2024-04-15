@@ -1,5 +1,5 @@
 import MealPlanner from "./MealPlanner";
-import WeightTracker from "./WeightTracker";
+// import WeightTracker from "./WeightTracker";
 
 function TransformMe() {
   return (
@@ -26,7 +26,7 @@ function TransformMe() {
         fitness
       </p>
       <MealPlanner />
-      <WeightTracker/>
+      {/* <WeightTracker/> */}
       <br />
     </div>
   );
